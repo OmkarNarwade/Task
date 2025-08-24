@@ -27,7 +27,7 @@ After logging in or signing up, users can see a personalized home screen with:
 
 ## 📂 Project Structure
 
-'''
+```
 lib/
 │
 ├── main.dart
