@@ -1,48 +1,37 @@
-# flutter_application_task
+# Flutter Auth App 🚀
 
-A simple Flutter authentication app with Riverpod state management and Hive local storage.
-Users can sign up, log in, log out, and after authentication land on a counter screen with increment, decrement, and reset actions.
+A simple **Flutter authentication app** built with:
+- **Riverpod** for state management
+- **Hive** for local database storage
+- **Google Fonts** for custom typography  
 
-✨ Features
+After logging in or signing up, users can see a personalized home screen with:
+- A welcome message showing their **username**
+- A **counter** with increment, decrement, and reset functionality
+- A **logout button** to return to the login/signup screen  
 
-✅ User sign up & login with username/password
+---
 
-✅ Local persistence using Hive 
+## ✨ Features
 
-✅ State management using Riverpod
+- ✅ User **Sign Up** with Hive local database  
+- ✅ User **Login** with validation  
+- ✅ State management handled using **Riverpod**  
+- ✅ Persists user credentials locally  
+- ✅ Displays **welcome message with username**  
+- ✅ Counter with **Increment / Decrement / Reset** buttons  
+- ✅ **Logout** support  
+- ✅ Transparent AppBar and modern UI  
 
-✅ Beautiful UI with Google Fonts
+---
 
-✅ Home screen with counter functionality:
+## 📂 Project Structure
 
-   -Increment (+1)
-   -Decrement (-1)
-   -Reset (0)
-
-✅ Logout option in the AppBar
-
-📂 Project Structure
+'''
 lib/
 │
-├── main.dart                # Entry point
-│
+├── main.dart
 ├── auth/
-│   ├── auth_screen.dart      # Login / SignUp UI
-│   └── auth_notifier.dart    # Authentication logic (Riverpod + Hive)
-│
-├── home_screen.dart          # Home page with counter + logout
-
-📦 Dependencies
-
-The app uses the following major packages:
-
-flutter_riverpod
- → State management
-
-hive
- & hive_flutter
- → Local storage
-
-google_fonts
- → Beautiful typography
-
+│   ├── auth_screen.dart
+│   └── auth_notifier.dart
+├── home_screen.dart
